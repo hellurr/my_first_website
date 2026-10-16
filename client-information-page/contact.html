@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Twin Cities Animal Rescue</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="/client-information-page/rescue-logo_c.png" 
+        alt="Twin Cities Animal Rescue with a green animal inspired logo design on top."
+        class="brand-logo">
+
+            <nav aria-label="Primary">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Page</a>
+                <a href="services.html" class="nav-link">Our Services</a>
+                <a href="contact.html" aria-current="page" class="nav-link">Contact Us</a>
+            </nav>
+        </header>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+
+        <main id="main-content">
+            <div class="interest-form">
+            <section>
+            <h1>Volunteer or Foster Interest Form</h1>
+            <form action="/contact" method="post">
+                <fieldset>
+                    <legend>Your Information</legend>
+                <label for="name"> <!--implicit association used--> Name: </label>
+                    <input type="text" id="name" name="name" placeholder="Enter full name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter email address" required>
+                </fieldset>
+
+                <div class="preference-row">
+                <fieldset>
+                    <legend>Your Preference(s)</legend>
+                    <label for="interest_type">Interest Type:</label>
+                    <select id="interest_type" name="interest_type" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="volunteer">Volunteer</option>
+                        <option value="foster">Foster</option>
+                        <option value="both">Both</option>
+                    </select>
+                    </fieldset>
+
+                    <fieldset>
+                    <legend>Availability</legend>
+                    <label><input type="checkbox" name="days" value="mon"> Mon</label>
+                    <label><input type="checkbox" name="days" value="tue"> Tue</label>
+                    <label><input type="checkbox" name="days" value="wed"> Wed</label>
+                    <label><input type="checkbox" name="days" value="thu"> Thu</label>
+                    <label><input type="checkbox" name="days" value="fri"> Fri</label>
+                    <label><input type="checkbox" name="days" value="sat"> Sat</label>
+                    <label><input type="checkbox" name="days" value="sun"> Sun</label>
+                    </fieldset>
+                    </div>
+                    
+
+                <fieldset>
+                    <legend>Background Information</legend>
+                    <label for="experience">Experience:</label>
+                    <input type="text" id="experience" name="experience" placeholder="Enter prior experience">
+                    <label for="short_message">Short Message:</label>
+                    <textarea id="short_message" name="short_message" rows="3" placeholder="Enter a short message"></textarea>
+                </label>
+                </fieldset>
+                <button type="submit" class="submit">Submit Application</button>
+            </form>
+            </section>
+            </div>
+
+            <div class="service-area">
+            <section>
+            <h1>Service Area</h1>
+            <p>Based in Minnesota. Serving the Twin Cities area.</p>
+            </section>
+            </div>
+
+            <div class="office-hours">
+            <section>
+            <h1>Office Hours</h1>
+            <ul>
+                <li>Monday-Friday: 8a - 5p</li>
+                <li>Saturday & Sunday: 8a - 6p</li>
+            </ul>
+            </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <nav aria-label="Footer">
+                <p>&copy; 2026 Twin Cities Animal Rescue</p>
+            </nav>
+        </footer>
+    </body>
+
+</html>
