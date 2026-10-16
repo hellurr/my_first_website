@@ -1,2 +1,2 @@
 # my_first_website
-sophia follow-along example
+sophia touchstone 3
